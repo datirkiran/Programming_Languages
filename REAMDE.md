@@ -86,6 +86,8 @@ You can later add GitHub stats cards here.
 
 ## Connect With Me
 
-* LinkedIn
-* GitHub
-* Email
+* LinkedIn - https://www.linkedin.com/in/kiran-datir
+* GitHub - https://github.com/datirkiran
+* Email - datirkiran0@gmail.com
+
+

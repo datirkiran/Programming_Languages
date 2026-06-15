@@ -71,10 +71,11 @@ Currently focused on improving problem-solving skills and building real-world pr
 
 * ✅ C Programming
 * ✅ C++
-* 🔄 Java
+* ✅ Java
+* 🔄 Spring Boot
 * 🔄 Data Structures
 * ⏳ System Design
-* ⏳ Spring Boot
+
 
 ---
 

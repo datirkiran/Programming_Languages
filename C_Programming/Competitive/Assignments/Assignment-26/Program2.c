@@ -22,11 +22,11 @@ void Pattern(int iRow, int iCol)
         return;
     }
 
-    for(i = 1; i <= iRow; i++)
+    for(i = iRow; i >= 1; i--)
     {
         for(j = 1; j <= iCol; j++)
         {
-            if((i+j)<=(iRow+1))
+            if(i >= j)
             {
                 printf("*\t");
             }

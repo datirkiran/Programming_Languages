@@ -26,13 +26,13 @@ void Pattern(int iRow, int iCol)
     {
         for(j = 1; j <= iCol; j++)
         {
-            if(i < j)
+            if(i >= j)
             {
-                printf("#\t");
+                printf("*\t");
             }
             else
             {
-                printf("*\t");
+                printf("#\t");
             }  
         } 
         printf("\n");

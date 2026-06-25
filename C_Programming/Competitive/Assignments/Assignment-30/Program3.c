@@ -1,9 +1,9 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// Accept character from user. if it is capital than display all the character from the input
-// character till Z. if character is small than print all the character in reverse order till a. 
-// In other cases return directly.
-//  Input: S      Output: S T U V W X Y Z
-//  Input: g      Output: g f e d c b a
+// Accept character from user. If Character is small display its corresponding capital character 
+// and if it is capital then display its corresponding small character. In other case display
+// as it is.
+//  Input: Q       Input: m       Input: %         Input: 4
+//  Output: q      Output: M      Output: %        output: 4 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
@@ -14,21 +14,15 @@ void Display(char ch)
 
     if((ch >= 'A') && (ch <= 'Z'))
     {
-        for(i = ch; i <= 'Z'; i++)
-        {
-            printf("%c\t", i);
-        }
+        printf("Corresponding character is : %c\n", ch + 32);
     }
     else if((ch >= 'a') && (ch <= 'z'))
     {
-        for(i = ch; i >= 'a'; i--)
-        {
-            printf("%c\t",i);
-        }
+        printf("Corresponding character is : %c\n", ch - 32);
     }
     else
     {
-        return;
+        printf("No Corresponding character : %c\n", ch);
     }
     printf("\n");
 }

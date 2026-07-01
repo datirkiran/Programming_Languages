@@ -1,34 +1,28 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
-// Write a program which accept string from user and display it in reverse Order.
+// Write a program which accept string from user and convert it lower case.
 // 
-// Input: "MaravallouS" 
-// Output: "SuollavaraM"          
+// Input: "Maravallous Multi OS" 
+// Output: "marvallous multi os"          
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-void Reverse(char *str)
+void strlwrx(char *str)
 {
-    char *start = NULL;
-
-
-    start = str;
-
-    while(*str != '\0')
+    if(str == NULL)
     {
-        str++;
-    }
-    
-    str--;
-    
-    while(start <= str)
-    {
-        printf("%c", *str);
-        str--;
+        return;
     }
 
-    printf("\n");
+    while (*str != '\0')
+    {
+     if((*str >= 'A') && *str <= 'Z')
+     {
+        *str = *str + 32;
+     }
+     str++;
+    }
 }
 
 int main()
@@ -38,7 +32,9 @@ int main()
     printf("Enyter string : \n");
     scanf("%[^'\n']s",Arr);
 
-    Reverse(Arr);
+    strlwrx(Arr);
+
+    printf("Modified string is : %s\n",Arr);
 
     return 0;
 }
